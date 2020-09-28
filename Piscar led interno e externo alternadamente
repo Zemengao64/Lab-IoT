@@ -1,0 +1,19 @@
+// Exercício 4
+
+void setup() {
+  // Piscar led interno e externo alternadamente
+  // José Augusto Ramos Belmont
+  pinMode(13, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(500);
+  digitalWrite(13, LOW);
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
+
+}
