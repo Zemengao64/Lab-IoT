@@ -1,0 +1,32 @@
+
+// Exercício 5
+
+
+void setup() {
+  // Piscar leds em frequencias diferentes
+  // José Augusto Ramos Belmont
+  pinMode(13, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  for (int i=2; i<10;i++){
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(100);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(100);
+  }
+  
+  digitalWrite(13, LOW);
+  for (int i=2; i<10;i++){
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(100);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(100);
+  }
+  
+}
+
+// Limk para visualização:  https://photos.app.goo.gl/9oEh3K9J98P2zjHN6
